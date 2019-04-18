@@ -7,3 +7,8 @@ This simulation of a guided projectile was ran for impact angle designation targ
 ## Illustrations
 <img src="https://github.com/Tac321/Missile-Guidance/blob/master/Images/Impact_Angle_Planning.png" width="700" />
 
+
+
+## Hot to run
+
+Msl_COMPLETE_ADD_ImpactAngle.pde
