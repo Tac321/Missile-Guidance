@@ -23,4 +23,3 @@ Msl_COMPLETE_ADD_ImpactAngle.pde
 Note: This simulation is sufficient for tracking moving targets as well.
 
 ## Example
-<img src="https://github.com/alexliniger/MPCC/blob/master/Images/MPC_sim.gif" width="700" />
