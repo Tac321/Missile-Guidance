@@ -2,5 +2,5 @@
 Targeting of maneuvering targets using a four fin missile configuration.
 
 ## Illustrations
-<img src="https://github.com/alexliniger/MPCC/blob/master/Images/MPC_sim.gif" width="700" />
+<img src="https://github.com/Tac321/Missile-Guidance/blob/master/Images/Impact_Angle_Planning.png" width="700" />
 
