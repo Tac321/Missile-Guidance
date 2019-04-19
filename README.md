@@ -5,16 +5,11 @@ Tracking of maneuvering targets using a four fin rocket configuration.
 This simulation of a guided projectile was ran for impact angle designation targeting and tracking of a moving target under sinusoidal oscillation in the inertial frame x-axis and y-axis.  Proportional Navigation (PNG) was used for the missile tracking algorithms, and this model includes a 3-Loop autopilot model. This model can target static and moving targets.
 
 ## Illustrations
-#Impact Angle Designation
+# Impact Angle Designation
 <img src="https://github.com/Tac321/Missile-Guidance/blob/master/Images/ImpactAngleDesig.gif" width="700" />
 
 # Tracking Maneuvering Target
-
-
-## Hot to run
-
-Msl_COMPLETE_ADD_ImpactAngle.pde
-
+<img src="https://github.com/Tac321/Missile-Guidance/blob/master/Images/ManeuvTargetPursuit.gif" width="700" />
 
 ## How to run
 # Run code
@@ -24,4 +19,4 @@ Msl_COMPLETE_ADD_ImpactAngle.pde
 
 Note: This simulation is sufficient for tracking moving targets as well.
 
-## Example
+
