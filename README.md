@@ -17,3 +17,5 @@ This simulation of a guided projectile was ran for impact angle designation targ
 2) To turn on the simulation press "g". Feel free to add additional rocket thrust "Rub" using the slider on the right side of the screen.
 3) In the beginning of the flight choose the impact angle "XLAMDoffset" in radians,  you wish the projectile to contact the target. (Note: the code cannot handle an impact angle of 90 degrees yet due to singularity of Euler angle sequence. Work is being pursued to mitigate this.
 
+### Note:
+The projectile roll was frozen, however the projectile still functions even if it is rolling.
