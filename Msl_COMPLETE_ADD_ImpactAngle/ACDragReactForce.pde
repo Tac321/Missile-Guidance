@@ -14,14 +14,14 @@ class ACDragReactForce {
   private float dragLatMagn,dragLatLadoMagn,dragLatMagnr,dragLatMagnl,dragNoseMagn,dragDynMagn,dragForeMagn;
   private float DdotG;
   private float rho_sl=1.225; 
-  private float Cd= .07, Cdr=1.15, Cdl=Cdr, Cdyn=Cdl, Cfor=Cdyn,Cdfus=1.00;
-  private float  radius= 3.5*.0254; 
+  private float Cd= .071, Cdr=1.152, Cdl=Cdr, Cdyn=Cdl, Cfor=Cdyn,Cdfus=1.01;
+  private float  radius= 3.4*.0254; 
   // Plate aras of the missile model are calculated below.
   private float  AreaNose= PI*radius*radius ;
   private float AreaFuse=radius*2*1.6256;
-  private float Areafwset = 1*(12.5*3*.0254*.0254)*2; 
-  private float AreaDyn = 1*2.5*3*(.0254*.0254);
-  private float  AreaFor = 1*2.5*(3+1.0/3.0)*(.0254*.0254); 
+  private float Areafwset = 1*(12.401*3*.0254*.0254)*2; 
+  private float AreaDyn = 1*2.5001*3*(.0254*.0254);
+  private float  AreaFor = 1*2.51*(3+1.0/3.0)*(.0254*.0254); 
   private float xV, yV, zV;
   private float normVelocity;
   
