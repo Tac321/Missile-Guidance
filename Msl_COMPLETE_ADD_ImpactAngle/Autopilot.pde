@@ -5,7 +5,7 @@
 class Autopilot {
 // Autopilot Initializations
  private float g = 9.81;
- private float mTot = 45.5;
+ private float mTot = 44.0;
  private float weight = g*mTot;
  private float LengthFuse = 1.6256; //[m]    64"
  private float DELq=0.0, DELr=0.0 ;
@@ -35,7 +35,7 @@ private float dRangeLOSNorm1; //
 private PVector primero, segundo, tercero,cuarto, quinto ;
 private float inToMeters=  0.0254;
 // AF parameters below.
-private float Cd= .47, Cdr=1.15, Cdl=Cdr, Cdyn=Cdl, Cfor=Cdyn,Cdfus=1.00;
+private float Cd= .46, Cdr=1.14, Cdl=Cdr, Cdyn=Cdl, Cfor=Cdyn,Cdfus=1.00;
 private float  radius= 3.5*inToMeters; 
 private float  AreaNose= PI*radius*radius ;
 private float AreaFuse=radius*2*LengthFuse;
