@@ -44,45 +44,45 @@ private void calcQ() {
     rotZ= rotation.z;
    
     
-    rdf1.x= cos(rotZ)*cos(rotY) * -23.25*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
-    rdf1.y= -sin(rotZ)*cos(rotY)* -23.25*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
-    rdf1.z= sin(rotY)*            -23.25*inToMeters+-cos(rotY)*sin(rotX)                             *  5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
-    rdf1d.x= cos(rotZ)*cos(rotY) *-30.75*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters; // Dynamic fins.
-    rdf1d.y= -sin(rotZ)*cos(rotY)*-30.75*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf1d.z= sin(rotY)*           -30.75*inToMeters+-cos(rotY)*sin(rotX)                             *  5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
-    rdf1f.x= cos(rotZ)*cos(rotY) * 18.73*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf1f.y= -sin(rotZ)*cos(rotY)* 18.73*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf1f.z= sin(rotY)*            18.73*inToMeters+-cos(rotY)*sin(rotX)                             *  5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf1.x= cos(rotZ)*cos(rotY) * -23.251*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
+    rdf1.y= -sin(rotZ)*cos(rotY)* -23.251*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
+    rdf1.z= sin(rotY)*            -23.251*inToMeters+-cos(rotY)*sin(rotX)                             *  5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf1d.x= cos(rotZ)*cos(rotY) *-30.74*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters; // Dynamic fins.
+    rdf1d.y= -sin(rotZ)*cos(rotY)*-30.74*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf1d.z= sin(rotY)*           -30.74*inToMeters+-cos(rotY)*sin(rotX)                             *  5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf1f.x= cos(rotZ)*cos(rotY) * 18.72*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf1f.y= -sin(rotZ)*cos(rotY)* 18.72*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf1f.z= sin(rotY)*            18.72*inToMeters+-cos(rotY)*sin(rotX)                             *  5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
   
-    rdf2.x= cos(rotZ)*cos(rotY) * -23.25*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters ;
-    rdf2.y= -sin(rotZ)*cos(rotY)* -23.25*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters ;
-    rdf2.z= sin(rotY)*            -23.25*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5*inToMeters;
-    rdf2d.x= cos(rotZ)*cos(rotY) *-30.75*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters;
-    rdf2d.y= -sin(rotZ)*cos(rotY)*-30.75*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters;
-    rdf2d.z= sin(rotY)*           -30.75*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5*inToMeters;
-    rdf2f.x= cos(rotZ)*cos(rotY) * 18.73*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters;
-    rdf2f.y= -sin(rotZ)*cos(rotY)* 18.73*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5*inToMeters;
-    rdf2f.z= sin(rotY)*            18.73*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5*inToMeters;
+    rdf2.x= cos(rotZ)*cos(rotY) * -23.251*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters ;
+    rdf2.y= -sin(rotZ)*cos(rotY)* -23.251*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters ;
+    rdf2.z= sin(rotY)*            -23.251*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5.01*inToMeters;
+    rdf2d.x= cos(rotZ)*cos(rotY) *-30.74*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters;
+    rdf2d.y= -sin(rotZ)*cos(rotY)*-30.74*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters;
+    rdf2d.z= sin(rotY)*           -30.74*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5.01*inToMeters;
+    rdf2f.x= cos(rotZ)*cos(rotY) * 18.72*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters;
+    rdf2f.y= -sin(rotZ)*cos(rotY)* 18.72*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*5.01*inToMeters;
+    rdf2f.z= sin(rotY)*            18.72*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             5.01*inToMeters;
   
-    rdf3.x= cos(rotZ)*cos(rotY) * -23.25*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
-    rdf3.y= -sin(rotZ)*cos(rotY)* -23.25*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
-    rdf3.z= sin(rotY)*            -23.25*inToMeters+-cos(rotY)*sin(rotX)                             *  -5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
-    rdf3d.x= cos(rotZ)*cos(rotY) *-30.75*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf3d.y= -sin(rotZ)*cos(rotY)*-30.75*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf3d.z= sin(rotY)*           -30.75*inToMeters+-cos(rotY)*sin(rotX)                             *  -5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
-    rdf3f.x= cos(rotZ)*cos(rotY) * 18.73*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf3f.y= -sin(rotZ)*cos(rotY)* 18.73*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
-    rdf3f.z= sin(rotY)*            18.73*inToMeters+-cos(rotY)*sin(rotX)                             *  -5*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf3.x= cos(rotZ)*cos(rotY) * -23.251*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
+    rdf3.y= -sin(rotZ)*cos(rotY)* -23.251*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters ;
+    rdf3.z= sin(rotY)*            -23.251*inToMeters+-cos(rotY)*sin(rotX)                             *  -5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf3d.x= cos(rotZ)*cos(rotY) *-30.74*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf3d.y= -sin(rotZ)*cos(rotY)*-30.74*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf3d.z= sin(rotY)*           -30.74*inToMeters+-cos(rotY)*sin(rotX)                             *  -5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
+    rdf3f.x= cos(rotZ)*cos(rotY) * 18.72*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf3f.y= -sin(rotZ)*cos(rotY)* 18.72*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*-5.01*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*0*inToMeters;
+    rdf3f.z= sin(rotY)*            18.72*inToMeters+-cos(rotY)*sin(rotX)                             *  -5.01*inToMeters+  cos(rotY)*cos(rotX)   *                             0*inToMeters;
   
-    rdf4.x= cos(rotZ)*cos(rotY) * -23.25*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters ;
-    rdf4.y= -sin(rotZ)*cos(rotY)* -23.25*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters ;
-    rdf4.z= sin(rotY)*            -23.25*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5*inToMeters;
-    rdf4d.x= cos(rotZ)*cos(rotY) *-30.75*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters;
-    rdf4d.y= -sin(rotZ)*cos(rotY)*-30.75*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters;
-    rdf4d.z= sin(rotY)*           -30.75*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5*inToMeters;
-    rdf4f.x= cos(rotZ)*cos(rotY) * 18.73*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters;
-    rdf4f.y= -sin(rotZ)*cos(rotY)* 18.73*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5*inToMeters;
-    rdf4f.z= sin(rotY)*            18.73*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5*inToMeters;
+    rdf4.x= cos(rotZ)*cos(rotY) * -23.251*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters ;
+    rdf4.y= -sin(rotZ)*cos(rotY)* -23.251*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters ;
+    rdf4.z= sin(rotY)*            -23.251*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5.01*inToMeters;
+    rdf4d.x= cos(rotZ)*cos(rotY) *-30.74*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters;
+    rdf4d.y= -sin(rotZ)*cos(rotY)*-30.74*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters;
+    rdf4d.z= sin(rotY)*           -30.74*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5.01*inToMeters;
+    rdf4f.x= cos(rotZ)*cos(rotY) * 18.72*inToMeters+(sin(rotZ)*cos(rotX)+cos(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (sin(rotZ)*sin(rotX)-cos(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters;
+    rdf4f.y= -sin(rotZ)*cos(rotY)* 18.72*inToMeters+(cos(rotZ)*cos(rotX)-sin(rotZ)*sin(rotY)*sin(rotX))*0*inToMeters + (cos(rotZ)*sin(rotX)+sin(rotZ)*sin(rotY)*cos(rotX))*-5.01*inToMeters;
+    rdf4f.z= sin(rotY)*            18.72*inToMeters+-cos(rotY)*sin(rotX)                             *  0*inToMeters+  cos(rotY)*cos(rotX)   *                             -5.01*inToMeters;
 
   }
   
