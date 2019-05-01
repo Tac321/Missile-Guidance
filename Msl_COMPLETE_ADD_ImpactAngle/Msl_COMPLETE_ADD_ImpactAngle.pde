@@ -5,8 +5,8 @@
 
 
 // PARAMETERS TO TUNE PERFORMANCE
-// thrMagn==2675 [lbs] // Maximum Thrust amount
-float burnTime=3.0; // duration of constant thrust, [secs]
+// thrMagn==2700 [lbs] // Maximum Thrust amount
+float burnTime=4.0; // duration of constant thrust, [secs]
 float ballistTime=1.0; // One second after launch, msl control system comes on, to actuate Msl
 
 
@@ -30,7 +30,7 @@ int guidFlagInt=0;
 float g = 9.81; //  Gravity
 
 // Masses and Weights and Moments  of Inertia
-float mTot= 45.5 ;   // Total A/C mass [kg]
+float mTot= 44.0 ;   // Total A/C mass [kg]
 float weight= g*mTot  ;   
 float Jx=1866/1, Jy=80, Jz=Jy;   // Moment of inertia,  originally at 80
 // Maximum mechanical fin deflection.
@@ -81,11 +81,11 @@ float AreaFor = 1*2.5*(3+1.0/3.0)*(.0254*.0254);
 float Cd= .47, Cdr=1.15, Cdl=Cdr, Cdyn=Cdl, Cfor=Cdyn, Cdfus=1.00; // Cd=0.01, I set to Cd=Cdfus= .47 to get reasonable terminal velocity for semicircle nose rocket.
 // */
 
-float x = 3000*3*0 ;    // North Displacement
+float x = 2000*3*0 ;    // North Displacement
 float dx = 0;
 float ddx = 0;
-float y = -4000*1*1/.3048;  // East Displacement  /.3048    Puts displacement in [m], In my program, distance compared to the SEE is actually in feet! WEIRD!!!
-float angOff= 122.50;
+float y = -4001*1*1/.3048;  // East Displacement  /.3048    Puts displacement in [m], In my program, distance compared to the SEE is actually in feet! WEIRD!!!
+float angOff= 120.00;
 float dy = 0;
 float ddy = 0;
 float z = 0.0; // [m]    // Altitude. "Up"
